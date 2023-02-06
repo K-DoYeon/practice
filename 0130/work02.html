@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- block : 특별한 경우가 아니면 block,inline 모두 사용이 가능하다
+    inline : inline 요소만 쓸 수있다. 
+    del,ins : 인라인요소로도 사용이 가능하며 block요소로 사용가능-->
+
+    <!-- inline의 형태로 -->
+    <p>매일 팔굽혀 펴기는 <del>50회</del> <ins>2회</ins> 실시한다. </p>
+    <strong><p>매일 팔굽혀 펴기는</p><p>50회 한다.</p></strong> 틀림
+    <!-- 블록 형태로 -->
+    <del>
+        <p>매일 아침 새벽에 일어나 30분 조깅을 한다.</p>
+        <p>식사는 고단백, 저열량으로 먹는다.</p>
+    </del>
+    <ins>
+        <p>아침은 충분한 숙면을 취하도록 한다.</p>
+        <p>맛있으면 살 안찐다. 잘 먹자.</p>
+    </ins>
+
+    <!-- 인용 : block형태의 인용문 : blockquote (들여쓰기가 됨), inline형태의 인용문 : q -->
+    <!-- blockquote인용문-->
+    <p>다음은 소설 <cite>소나기</cite>의 한 부분 입니다.</p> <!-- 요소로 쓴것-->
+    <blockquote cite="http://소나기.com"> <!-- 속성으로 쓴것-->
+    <p>'이 바보.'</p>
+    <p>조약돌이 날아왔다. 소년은 저도 모르게 벌떡 일어섰다.</p>
+    </blockquote>
+
+    <!-- inline인용문-->
+    <p>소설 소나기에서 <q cite="http://소나기.com">이바보</q> 라고 소녀가 말한다.</p> <!--인용문이라는 의미를 가지고 있어야 하고 아닐때는 그냥 ""를 써라-->
+
+    <!-- em,strong은 의미가 거의 비슷하지만 em은 좀 더 주관적이고 strong은 객관적인 강조이다
+    q,blockquote은 인용을 나타내는 요소이다
+    q는 인라인 요소 blockquote는 블럭요소이다
+    cite는 작품의 명칭을 나타내는 요소이다
+    cite가 요소가 아닌 q나 blockquote의 속성으로 사용될 때는 출처가 되는 url을 명시
+    ins는 추가 del은 삭제를 나타내는 요소이다
+    ins,del은 부모요소의 형태에 따라 블록이거나 인라인 요소가 될 수 있다. -->
+
+    <p><a href="http://naver.com">네이버</a>로 이동하는 링크</p>
+
+
+
+
+</body>
+</html>

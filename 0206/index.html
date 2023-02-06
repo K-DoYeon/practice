@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <form action="" method="get">
+        <!-- input type= button , reset(폼 내용 지우기), submit(폼 내용 전송)
+        <botton type="button">버튼</button> -->
+        <label for="username">아이디</label>
+        <input type="text" name="username" id="username" placeholder="아이디"> <br>
+        <!-- 폼에 쓴 내용을 변수에 담아서 페이지로 넘김 -->
+        <label for="userpass">비밀번호</label>
+        <input type="password" name="userpass" id="userpass" placeholder="비밀번호">
+        <input type="submit" value="전송">
+
+        <!-- input type = checkbox, radio, textarea 
+        select option / option/ select-->
+        <!-- required -->
+        
+        <label>아이디를 기억하자 <input type="checkbox" name="ckbox" value="ok" checked></label>
+        <textarea name="content" rows="10" cols="30"></textarea>>요사이에 쓴게 value값</textarea>
+        <div>
+            <p>자신의 성격을 선택하세요.</p>
+            <ul>
+                <li><label>포악함 <input type="radio" name="char" value="포악함"></label></li>
+                <li><label>착함 <input type="radio" name="char" value="착함"></label></li>
+                <li><label>게으름 <input type="radio" name="char" value="게으름" checked></label></li>
+                <li><label>비밀 <input type="radio" name="char" value="비밀"></label></li>
+            </ul>
+        </div>
+
+        <div>
+            <p>자신의 재산을 선택하세요.</p>
+            <div>
+                <select name="select">
+                    <option value="10만원">10만원</option>
+                    <option value="100만원">100만원</option>
+                    <option value="1000만원" selected>1000만원</option>
+                    <option value="10000만원">10000만원</option>
+                </select>
+            </div>
+        </div>
+
+        <input type="submit" value="전송">
+        <button type="reset">취소</button>
+        
+
+    </form>
+
+</body>
+</html>

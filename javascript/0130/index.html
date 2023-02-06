@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //문자열을 출력할 때는 따옴표로 싸서 출력
+        //숫자는 그대로 출력
+        //변수도 그대로 출력
+
+        // var str = "이곳에 출력";
+        // document.write("문자열");
+        // document.write(10);
+        // document.write(str);
+        // document.write("str");
+
+        // let str="자바는 역시";
+        // //변수 str을 이용하여 "자바는 역시 어렵습니다."를 출력하라.
+        // document.write(str + " 어렵습니다.")
+
+        //자바스크립트의 산술연산자
+        //+ - * / %
+        //a+b, a-b, a*b, a/b, a%b 
+        // 문1. 변수 num1=15; 변수 num2=2;
+        // 두 변수의 산술연산 결과를 result에 저장한 후 result를 출력하라
+        // 1.덧셈 2.뺄셈 3.곱셈 4.나눗셈 5.나머지
+
+        // let num1=15;
+        // let num2=2;
+        
+        // result = num1 + num2;
+        // document.write(result,"<br>");
+
+        // result = num1 - num2;
+        // document.write(result,"<br>");
+
+        // result = num1 * num2;
+        // document.write(result,"<br>");
+
+        // result = num1 / num2;
+        // document.write(result,"<br>");
+
+        // result = num1 % num2;
+        // document.write(result,"<br>");
+        
+    
+        
+        // 대입 연산자
+        // A += B === A = A+B
+        // A -= B === A = A-B
+
+        // let num1 = 10;
+        // let num2 = 3;
+        // num1 += num2;
+        // document.write(num1, "<br>"); //13
+        // num1 -= num2;
+        // document.write(num1,"<br>"); //10
+        // num1 *= num2;
+        // document.write(num1,"<br>"); //30
+        // num1 %= num2;
+        // document.write(num1); //0
+
+
+        // let str ="";
+        // str += "<h1>남으로 창을 내겠소</h1>";
+        // str += "<p>남(南)으로<br>창(窓)을 내겠소.</p>";
+        // str += "<p>밭이 한참갈이<br>괭이로 파고<br>호미론 김을 매지요.</p>";
+        // str += "<p>구름이 꼬인다<br>갈 리 있소.</p>";
+        // str += "<p>새 노래는 공으로 들으랴오.</p>";
+        // str += "<p>강냉이가 익걸랑<br>함께 와 자셔도 좋소</p>";
+        // str += "<p>왜 사냐건<br>웃지요.</p>";
+        // document.write(str);
+
+        // -산술 연산자 // 두 가지의 변수를 가져야 한다.
+        // -대입 연산자 // 두 가지의 변수가 계산되어야 한다.
+        // -증감 연산자 // ++, -- 증감 연산자는 숫자형 데이터를 1씩 증가시키거나 1씩 감소 시키는 연산자 / 변수--;, 또는 --변수;/ 변수++; 또는 ++변수;
+
+
+        // let num1 =10;
+        // let num2 =20;
+        // let result;
+        
+        // num1--;
+        // document.write(num1,"<br>"); //9
+
+        // num1++;
+        // document.write(num1,"<br>");//10
+
+        // result = num2++;
+        // document.write(result, "<br>");//20
+        // document.write(num2,"<br>");//21
+
+        // result = ++num2;
+        // document.write(result,"<br>");//22
+        // document.write(num2);//22
+
+        //-비교 연산자 A==B, 2=="2" true A===B, 2==="2"false
+        // A!=B
+
+        // let num1 = 10, num2 = "10";
+        // document.write(num1 == 10,"<br>");
+        // document.write(num2 == 10,"<br>");
+        // document.write(num1 === 10,"<br>");
+        // document.write(num2 ===10,"<br>");
+
+        //     let a = 10, b = 20, c = 10, f = "20";
+        //     document.write(a > b,"<br>");
+        //     document.write(a < b,"<br>");
+        //     document.write(a <= b,"<br>");
+        //     document.write(b == f,"<br>");
+        //     document.write(a != b,"<br>");
+        //     document.write(b === f,"<br>");
+
+        // -논리 연산자 and : &&, or: || , not :!
+        // true and true = true
+        // ture and false = false
+        // 연산자의 우선 순위
+        // 1.() 2. 단항연산자 : (--,++,!) 3. 산술 연산자 4. 비교 연산자 5. 논리 연산자 6. 대입 연산자
+
+        // let a = 10;
+        // let b = 20;
+        // let c = 30;
+        // let d = 40;
+
+        // // let rs;
+        // // rs1 = a>b||b>=c||c>d; //f || f || f => f
+        // // rs2 = a>b|| b >= c || c<= d; //f || f || f || t => t
+        // // document.write(rs1,rs2);
+
+        // let rs;
+        // rs1 = a<=b&&b>=c&&c<=d; 
+        // rs2 = a<b&&b<=c&&c<=d;
+        // rs3 = !(a>b);
+        // document.write(rs1,rs2,rs3);
+
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!-- 자바스크립트 삼향연산
+(조건)?true:false;
+위와 같은 3항 연산 식에서 참일 때 실행 문이 여러개 있거나 길다면, 또 false일 때 실행문이 여러개 있거나 길다면? 
+if조건문 : 만일 ~가 ~하다면 ~이다. if(조건문){실행문}-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <script>
+        let num = 10;
+        if("철수"){
+            document.write("안녕?");
+        }
+    </script> -->
+    
+    <!-- <script>
+        let walk = prompt("당신이 하루에 걷는 양은 몇 보인가요?", "0");
+        if(walk >= 10000){
+            document.write("당신은 매우 좋은 습관을 갖고 있습니다.");
+        }
+        document.write("+++++++++THE END+++++++++");
+    </script> -->
+
+    
+    <script>
+        // let name = prompt("이름을 적어주세요.", "0");
+        // // if(name){
+        // //     document.write(name + "님 홈페이지 방문을 환영합니다.");
+        // // }
+        // // else{document.write("님 이름을 입력하세요.")}
+        // let bow = (name)?name + "님 홈페이지 방문을 환영합니다.":"님 이름을 입력하세요.";
+        // document.write(bow);
+
+        // let result = confirm("정말로 탈퇴하시겠습니까?");
+        // if(result){
+        //     document.write("잘가~");
+        // }else{
+        //     document.write("잘생각했어");
+        // }
+
+        // let result = confirm("정말로 탈퇴하시겠습니까?");
+        // if(result){
+        //     let r = confirm("정말?");
+        //     if(r){
+        //         let n = confirm("진짜?");
+        //     if(s){
+        //         document.write("ㅋ");
+        //     }
+        //     }
+        // }
+
+        let now = prompt("지금은 몇 월 입니까?","0");
+
+        if(now >= 9 && now <= 11){
+            document.write("책 읽기 좋은 계절 가을입니다.");
+        }else if(now >=6 && now <= 8 ){
+            document.write("여행가기 좋은 여름입니다.");
+        }else if(now >=3 && now <=5 ){
+            document.write("햇살 가득한 봄입니다.");
+        }else {
+            document.write("스키타는 계절 겨울입니다.");
+        }
+
+        // let id = "myezen";
+        // let pw = "1234567";
+        // 아이디 저장 = prompt("아이디를 입력하세요.")
+        // 비번 저장 = prompt("비번을 입력하시오.")
+        // 모두 성공하면 000님 반갑습니다. 로그인 되었습니다. / 아이디 틀리면 아이디 틀렸습니다. / 비번이 틀리면 비밀번호가 틀렸습니다.
+
+        
+
+
+    </script>
+
+
+
+</body>
+</html>

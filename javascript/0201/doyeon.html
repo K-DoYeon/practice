@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <script>
+        let id = "myezen";
+        let pw = "1234567";
+
+        let a = prompt("아이디를 입력하시오.");
+        let b = prompt("패스워드를 입력하시오.");
+
+        if(id==a,pw==b) {
+            document.write("000님 반갑습니다. 로그인 되었습니다.");
+        }
+        if(id !== a){
+            document.write("아이디가 틀렸습니다.");
+        }else if (pw !== b) {
+            document.write("비밀번호가 틀렸습니다.");
+        }
+
+    </script> -->
+
+    <script>
+        let id = "myezen";
+        let pw = "1234567";
+
+        let a = prompt("아이디를 입력하시오.");
+        let b = prompt("패스워드를 입력하시오.");
+
+        if(id == a){
+            if(pw == b){
+                document.write(userid + "님 반갑습니다.");
+            }else{
+                alert("비밀번호가 틀렸습니다.")
+            }
+        }else{
+            alert("아이디가 틀렸습니다.");
+            document.write("000님 반갑습니다. 로그인 되었습니다.");
+            // document.location.reload();
+        }
+        document.write("---------The End----------");
+
+    </script>
+
+
+</body>
+</html>

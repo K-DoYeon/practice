@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // let x = "3.14";
+        // document.write(typeof x,"<br>");
+        // x=Number(x);
+        // document.write(typeof x);
+
+        //삼항 조건 연산자
+        //조건식? 참일때 결과:거짓일때 결과;
+        // let a =10;
+        // let b = 3;
+        // let result = (a < b)?"딩동댕":"땡";
+        // document.write(result);
+
+        // let r = confirm("맞니, 틀리니");
+        // document.write(r);
+
+        // let r = prompt("너 누구니");
+
+        /* let name= prompt("당신의 이름은 무엇인가요?","");
+        let height = prompt("당신의 신장은?","0");
+        let weight = prompt("당신의 몸무게는?","0");
+
+        let result = name+"님의 키는"+ height + "cm이며 몸무게는 " + weight + "kg 입니다.";
+        document.write(result); */
+
+        /*  let name= prompt("당신의 이름은 무엇인가요?","");
+        let height = prompt("당신의 신장은?","0");
+        let weight  = prompt("당신의 몸무게는?","0");
+        let normalweight = (height - 100)*0.9;
+        let result = (weight >= normalweight -5 && weight <= normalweight +5)?"좋은 몸무게 입니다.":"안좋아요. 몸무게를 관리 하세요.";
+        document.write(name + "님," + result); */
+
+
+       //문. 하루지출 내역이 교통비 4,000원 식비 9,000 음료비 3,000원이다. 적정 하루 지출비가 15,000원이라고 할 때 15,000을 초과 했을 경우 "000원 초과" 아닐경우 "돈 관리 잘했어요!"라고 출력하라.
+
+       /* let traffic = 4000;
+       let food = 9000;
+       let drink = 3000;
+       let total = traffic+food+drink
+       let result = total > 15000? total-15000 + "원 초과":"돈 관리 잘했어요!";
+       document.write(result); */
+
+    /* const price1 = 4000;
+    const price2 = 9000;
+    const price3 = 3000;
+    const total = price1+price2+price3
+    let result = total >15000?total-15000 + "원 초과" : "돈 관리 잘했어요.";
+    document.write(result);
+ */
+
+       //문. 1분기 판매량이 1,200 이고 2분기 1,300 3분기 1,000이라고 할때 4분기 판매량을 입력받아 전 분기 평균 판매량보다 높거나 같은 경우 "판매량이 평균 이상입니다."를 출력, 낮을 경우 "판매량이 평균 미달입니다"를 출력하라
+
+       /* let a = 1200;
+       let b = 1300;
+       let c = 1000;
+       let f =(a+b+c)/3;
+       let d = prompt("4분기 판매량은?");
+       let result = (f<=d)?"판매량이 평균 이상입니다.":"판매량이 평균 미달입니다.";
+       document.write(result); */
+
+       const avgSale = (1200+1300+1000) /3 
+       let fourth = prompt("4분기 판매량을 입력하시오.", "0");
+       const msg1 = "판매량이 평균 이상입니다.";
+       const msg2 = "판매량이 평균 미달입니다.";
+       let rs = fourth >= avgSale?msg1:msg2;
+       document.write(rs);
+
+
+
+        
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

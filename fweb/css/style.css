@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    height: 70px;
+    background-color: #F1E3C4;
+}
+header a{
+    color:#62523F ;
+    text-decoration: none;
+   
+}
+
+.container{
+    width: 1200px;
+    /*블록박스 가운데 정렬하는 방법*/
+    margin-left: auto;
+    margin-right: auto; 
+}
+.row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.col-4{
+    width: 33.333334%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}

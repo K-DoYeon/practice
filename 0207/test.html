@@ -1,0 +1,98 @@
+<!-- 
+    block - form, div, p, h1~h6, header, main, section
+    inline - span, a, img, input
+    display : none(사라져서 아래있는 게 올라옴), visibility:hidden(투명처리);
+ -->
+
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box1, .box2{
+            display: block;
+            box-sizing: border-box;
+            padding: 30px;
+        } */
+        /* .box1{width: 1200px;
+            background-color: pink;}
+        .box2{max-width: 1200px;
+            background-color: skyblue;} */
+        
+        .box1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black; 
+            /* position : static 기본값, 박스는 위치값을 갖지 않으며 주변 상황에 맞게 위치된다. */
+            /* position : absolte 주변의 다른 것과 상관없이 자기의 위치값을 갖는다. 단, 부모가 위치값을 갖고 있다면 부모로 부터 좌표가 시작된다. */
+            /* position : relative  다른거와 자신이 위치값을 갖는다*/
+        }
+        /* .box2{
+            background: yellow;
+            position: absolute;
+            top: 20px;
+            left : 20px;
+        } */
+        .container{
+            width: 900px;
+            height: 500px;
+            position: relative;
+        }
+        .gallery{
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+        .img{
+            max-width: 100%;
+            display: none;
+        }
+        /* 마우스가 올라기면 보여라 hover */
+        .gallery:hover>img.img{
+            display: block;
+        }
+        .box{
+            height: 2000px;
+        }
+        .top{text-align: center;
+            width: 40px;
+            height: 40px;
+            background: black;
+            padding-top: 7px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+        .top a{
+            color: white;
+            text-decoration: none;
+            font-size: 19px;
+        }
+    </style>
+ </head>
+ <body>
+    
+    <!-- <div class = "box1">
+        이상 것은 뭇 끓는다. </div> -->
+        <div class="container">
+            <div class = gallery>1
+                <img src="/0206/images/check.png" class="img" alt = "001">
+            </div>
+            <div class = gallery>2
+                <img src="/0201/images/001.jpg" class="img" alt = "002">
+            </div>
+            <div class = gallery>3
+                <img src="/0201/images/002.png" class="img" alt = "003">
+            </div>
+            <div class="box">ss</div>
+            <div class="top" ><a href="#"></a>
+                T
+            </div>
+        </div>
+
+    
+ </body>
+ </html>

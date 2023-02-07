@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    let user = prompt('가위, 바위, 보 중 하나를 내세요');
+    const rps = ["가위","바위","보"];
+
+    
+    switch(user){
+        case '가위' : 
+        user = 0;
+        break;
+            case '바위' :
+                user = 1;
+                break;
+                    case '보' : 
+                    user = 2 ;
+                    break;
+    }
+
+    let com = Math.floor(Math.random()*3);
+    console.log(com);
+    // console.log("사람"+ user);
+
+
+    if(user > com){
+        document.write("당신이 이겼습니다.");
+        }else if (user < com){
+            document.write("당신이 졌습니다.");
+            }else{
+                document.write("비겼습니다.");
+            }
+
+</script>
+
+</body>
+</html>

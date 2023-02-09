@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+            font-size: 30px;
+            font-weight: bold;
+            color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+   <p id="block" class="b"></p>
+    <button type="button" onclick="myEvent()">누르시오</button>
+    <!-- alert('누르셨군요') -->
+    <!-- myEvent(); -->
+    <!-- "this.innerHTML = Date()" -->
+    <!-- click mouseover mouseout mouseenter mouseleave blur focus keydown keyup keypress load-->
+    
+
+
+    <script>
+       /*  //<요소 이벤트명 = "스크립트">
+        function myEvent(){
+            // document.write("누르셨군요.")
+                document.getElementById("block").innerHTML = Date();
+        }
+ */
+//  function myEvent(){
+//  document.getElementById("block").innerHTML = Date();}
+
+    function myEvent(){
+        window.open("work02.html", "newWin", "width = 400, height = 300, left = 100, top = 100");
+    }
+
+    /* open("url", "새창이름", "새창옵션") - url 페이지를 새창에서 연다 
+                                            새창옵션 : width=숫자, height=숫자, left=숫자, top=숫자, scrollbars=yes or no, *location = yes or no(url 주소창 숨김, 노출)*, 
+                                                      status = yes or no(상태표시줄 영역 숨김, 노출), toolbars = yes or no(도구상자영역 숨김, 노출)
+                                            웹브라우저에서 기본설정에서 새창을 차단하는 경우가 많다.(on load event)
+        close()
+    alert(data), prompt(질문), confirm(질문) - 질의 응답등을 경고창으로 나타낸다
+    moveTo(x,y) - 지정한 새 창의 위치를 이동
+    resizeTo(width,height) - 지정한 새 창의 크기를 변경
+    setlnterval(function(){코드},시간) - 지속적으로 일정한 시간 간격으로 함수를 계속 호출한다. -> setlnterval(함수,시간);
+    setTimeout(function(){코드},시간) - 단 한번 일정한 시간 간격으로 함수를 호출 
+    
+    */
+
+    
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>

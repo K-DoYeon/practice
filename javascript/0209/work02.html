@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const userEmail = prompt("이메일 주소를 입력하세요.");
+        const arrUrl = ["co.kr", "com", "net", "pe.kr", "or.kr", "go.kr"];
+
+        //1. @있나 확인
+        //2. @뒷부분이 arrUrl안에 있나 확인
+
+        //1,2번이 성공을 하면 이메일 주소를 출력/ 실패시 alret('이메일을 똑바로 입력하세요.')
+
+        let chk1 = false;
+        let chk2 = false;
+
+        if(userEmail.indexOf("@") > 0){chk1 = true;}
+        
+        for(let i = 0; i < arrUrl.length; i++){
+            if(userEmail.indexOf(arrUrl[i]) > 0) {
+                chk2 = true;
+            }
+        }
+
+
+        if(chk1 && chk2 ){
+            document.write(userEmail);
+        }
+        else{
+            alert("이메일을 똑바로 입력하세요.");
+        }
+
+
+    </script>
+    
+</body>
+</html>

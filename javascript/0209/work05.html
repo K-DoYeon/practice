@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // screen 객체 메서드 종류
+
+        document.write("화면의 너비 : " + screen.width , "<br>");
+        document.write("화면의 높이 : " + screen.height , "<br>");
+        document.write("화면의 너비(작업표시줄 빼고) : " + screen.availWidth , "<br>");
+        document.write("화면의 높이(작업표시줄 빼고) : " + screen.availHeight , "<br>");
+        document.write("컬러 색상 수 : " + screen.colorDepth , "<br>");
+        document.write("픽셀당 비트 수 : " + screen.pixelDepth , "<br>");
+
+        document.write("href : " + location.href , "<br>");
+        document.write("hash : " + location.hash , "<br>");
+        document.write("hostname : " + location.hostname , "<br>");
+        document.write("host : " + location.host , "<br>");
+        document.write("protocol : " + location.protocol , "<br>");
+        document.write("search : " + location.search , "<br>");
+        // document.write("reload : " + location.reload , "<br>");
+        function rl(){
+            location.reload();
+        }
+        setInterval(rl, 2000);
+
+    </script>
+
+        <!-- location 객체 메서드 종류
+        location.속성 // location.매서드() 
+        location.href : 참조 주소를 설정하거나 URL을 반환 /파라미터창 전체 주소 또는 해당 페이지로 이동
+        location.hash : URL의 해시값(#)을 반환 / 예) http://demo.com/main/#main
+        location.hostname : URL 호스트 이름을 설정하거나 반환 /http://host.com
+        location.host : URL의 이름과 포트번호를 반환 / http://host.com:80
+        location.protocol : URL의 프로토콜을 반환 / http://host.com:80
+        location.search : URL의 쿼리를 반환 / ?key=vlaue&key2=value&
+        location.reload : F5 누른 것 처럼 브라우저를 새로고침
+    -->
+    
+</body>
+</html>

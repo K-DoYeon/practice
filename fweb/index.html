@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
@@ -16,20 +16,115 @@
         <div class="container">
             <!-- .row>.col-4*3 -->
             <div class="row">
-                <div class="col-4"></div>
-                <a href="#">
+                <div class="col-4">
+                <a href="#" class ="left">
                     호텔찾기<span class="material-symbols-outlined">
                     search
                     </span></a>
-                    <a href="#">
+                    <a href="#" class ="left">
                         예약<span class="material-symbols-outlined">
                             calendar_month
                             </span>
-                <div class="col-4"></div>
-                <div class="col-4"></div>
+                    </a>
+                </div>
+                    <!-- 로고 -->
+                <div class="col-4 text-center logo">
+                    <h1><a href="#"> THE SHALLA</a></h1>
+                    <p>hotels & resorts</p>
+                </div>
+
+
+                <div class="col-4">
+                    <div class ="right-top">
+                        <span class = "loginarea">
+                            <a href="#">로그인</a>
+                            <a href="#">샬라리워즈 가입</a>
+                        </span>
+                        
+                        <div class="tabs">
+                            한국어 <span class="material-symbols-outlined">
+                                expand_more
+                                </span>
+                                
+                        </div>
+                        <div class="tabs" onclick="viewTabsOn()">
+                            예약확인 <span class="material-symbols-outlined">
+                                expand_more
+                                </span>
+                                <div id="mytabs" class="tabs-on">
+                                    <p>예약확인 <span class="material-symbols-outlined">
+                                        expand_less 
+                                    </span></p>  
+                                    <ul>
+                                        <li><a href="#">객실</a></li>
+                                        <li><a href="#">다이닝</a></li>
+                                    </ul>   
+                                </div>
+                        </div>
+
+
+                </div>
+
+                <div class = "right-bottom">
+                    <a href="#">샬라리워즈</a>
+                    <a href="#">고객문의</a>
+                    <a href="#">호텔신라 소개</a>
+                </div>
+
             </div>
         </div>
     </header>
+
+    <!-- hero page -->
+    <div class="hero">
+        <div class = "container">
+            <div class = "row">
+                <div class="col-60 pt-400">
+                    <h2>김포 샬라호텔<small>Members Only</small>></h2>
+                    <h1>Rewards Limited Edition</h1>
+                    <p>푸른 자연이 함께하는 김포샬라호텔로 떠나는 여행, 조식 또는 중식</p>
+                </div>
+                
+                <div class="col-40 pt-400 text-right">
+                    <button class="btn-link">패키지 바로가기<span class="material-symbols-outlined">
+                        arrow_forward
+                        </span></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class = "container">
+            <div class="row">
+                <div class="HH">
+                    <h1>스페셜 오퍼</h1>
+                    <h3>SPECIAL OFFERS</h3>
+                </div>
+
+                <div class = "AD1">
+                    
+                        <img src="/fweb/images/seoul Sh.jpg" class="pic1" alt="seoul">
+                        <img src="/fweb/images/wine.jpg" class="pic2" alt="wine">
+                        <img src="/fweb/images/danag.jpg" class="pic3" alt="danag">
+                    
+                </div>
+
+                <div class = "AD2">
+                    <div class="pic-2"></div>
+                        <img src="/fweb/images/jeju Sh.jpg" class="pic4" alt="jeju">
+                        <img src="/fweb/images/stay.jpg" class="pic5" alt="stay">
+                    </div>
+                </div>
+                    
+                
+        </div>
+    </div>
+
+    <script src="js/script.js">
+
+    </script>
     
 </body>
 </html>

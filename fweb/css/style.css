@@ -3,17 +3,14 @@
 }
 body{
     margin: 0;
+    font-family: 'Gothic A1',sans-serif;
 }
-header{
-    height: 70px;
-    background-color: #F1E3C4;
+.text-center{
+    text-align: center;
 }
-header a{
-    color:#62523F ;
-    text-decoration: none;
-   
+.text-right{
+    text-align: right;
 }
-
 .container{
     width: 1200px;
     /*블록박스 가운데 정렬하는 방법*/
@@ -29,4 +26,253 @@ header a{
     float: left;
     padding-left: 10px;
     padding-right: 10px;
+}
+.col-60{
+    width: 60%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-40{
+    width: 40%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pt-400{
+    padding-top: 400px;
+}
+.AD1{
+    width: 800px;
+    height: auto;
+    float: left;
+}
+.AD2{
+    width: 420px;
+    height: auto;
+    float: left;
+}
+
+/************HEADER************/
+header{
+    height: 90px;
+    background-color: #F1E3C4;
+    padding-bottom: 15px;
+}
+header a.left{
+    color:#81725F;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-weight: 600;
+}
+header a span.material-symbols-outlined{
+    font-size: 18px;
+    vertical-align: top;
+    margin-left: 15px;
+}
+.logo h1,
+.logo p{
+    margin: 0;
+}
+.logo h1 a{
+    color: #81725F;
+    text-decoration: none;
+}
+.logo h1{
+    letter-spacing: 4px;
+    margin-top: 15px;
+}
+
+.logo p{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #81725F;
+}
+.right-top{
+    padding-top: 10px;
+    text-align: right;
+}
+.right-top a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: #81725F;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid #d3c2ab;
+}
+.tabs{
+    float: right;
+    font-size: 14px;
+    font-weight: 300;
+    color: #81725F;
+    cursor: pointer;
+    line-height: 14px;
+    padding-left: 15px;
+    position: relative;
+}
+.tabs-on{
+    width: 100%;
+    background-color: #cab9a1;
+    position: absolute;
+    top:-15px;
+    left: 0;
+    color: #fff;
+    display: none;
+}
+.tabs-on p{
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ab9777;
+}
+.tabs-on ul{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+.tabs-on ul li{
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.tabs-on ul li a{
+    text-align: left;
+    padding: 0;
+    color: #fff;
+}
+.tabs-on ul li a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.tabs:first-child{
+    padding-right: 15px;
+}
+.tabs span{
+    vertical-align: middle;
+
+}
+.right-bottom{
+    height: 50px;
+    margin-top: 20px;
+
+}
+.right-bottom a{
+    color:#666;
+    text-decoration: none;
+    display: block;    
+    float: right;
+    font-weight: 600;
+    margin-left: 48px;
+}
+.right-bottom a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #666;
+    margin-top: 15px;
+    display: none;
+}
+.right-bottom a:hover::after{
+    display: block;
+}
+
+/*******HERO*******/
+.hero{
+    width: 100%;
+    height: 650px;
+    background: url(/fweb/images/main.jpg) no-repeat center;
+    background-size: cover;
+}
+.hero h2{
+    font-family:'Noto Serif KR', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+.hero h2 small{
+    background-color: #F1E3C4;
+    color: #444;
+    margin-left: 15px;
+    font-size: 16px;
+    padding: 3px 8px;
+
+}
+.hero h1{
+    font-variant: small-caps; 
+    font-family: 'Noto Serif KR', serif;
+    color: #fff;
+    font-size: 58px;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 0 15px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+.hero p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+button.btn-link{
+    background-color: transparent;
+    border: 8px solid #F1E3C4;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 15px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.main2 .HH{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+}
+.main2 h1{
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0;
+    border-bottom: 1px solid #b6ac95;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+}
+.main2 h3{
+    font-size: 20px;
+    font-weight: 100;
+    color:#b6ac95;
+    letter-spacing: 10px;
+    margin-top: 10px;
+}
+.main2 .AD1 .pic1{
+    width: 790px;
+    height: auto;
+}
+.main2 .AD1 .pic2{
+    width: 391px;
+    height: 250px;
+    
+}
+.main2 .AD1 .pic3{
+    width: 391px;
+    height: 250px;
+}
+.main2 .AD1 .pic4{
+    width: 420px;
+    height: 250px;
+}
+.main2 .AD1 .pic5{
+    width: 420px;
+    height: 250px;
 }

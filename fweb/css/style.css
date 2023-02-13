@@ -258,21 +258,70 @@ button.btn-link{
 .main2 .AD1 .pic1{
     width: 790px;
     height: auto;
+    position: relative;
+}
+.main2 .AD1 .seoul{
+    position: absolute;
+    top: 90%;
+    margin-left: 15px;
+    line-height: 12px;
+    color: white;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 100;
 }
 .main2 .AD1 .pic2{
-    width: 391px;
+    width: 392.6px;
     height: 250px;
-    
+    position: relative;
+}
+.main2 .AD1 .wine{
+    position: absolute;
+    top: 110%;
+    margin-left: 15px;
+    line-height: 12px;
+    color: white;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 100;
 }
 .main2 .AD1 .pic3{
-    width: 391px;
+    width: 392.6px;
     height: 250px;
+    position: relative;
 }
-.main2 .AD1 .pic4{
-    width: 420px;
-    height: 250px;
+.main2 .AD1 .danag{
+    position: absolute;
+    top: 110%;
+    margin-left: 16%;
+    line-height: 12px;
+    color: white;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 100;
 }
-.main2 .AD1 .pic5{
+.main2 .AD2 .pic4{
     width: 420px;
-    height: 250px;
+    height: 323px;
+    position: relative;
+}
+.main2 .AD2 .jeju{
+    position: absolute;
+    top: 95%;
+    margin-left: 15px;
+    line-height: 12px;
+    color: white;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 100;
+}
+.main2 .AD2 .pic5{
+    width: 420px;
+    height: 323px;
+    position: relative;
+}
+.main2 .AD2 .stay{
+    position: absolute;
+    top: 110%;
+    margin-left: 15px;
+    line-height: 12px;
+    color: white;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 100;
 }

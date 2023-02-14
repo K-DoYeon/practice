@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "https://code.jquery.com/jquery.min.js"></script>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        // $(document).ready(function(){
+        //     자바스크립트 씀
+        // });
+        // $(function(){
+        //     $(".box").click(function(){
+        //         $(this).hide()
+        //     });
+        // });
+
+        $(function(){
+            $("button").click(function(){
+                /*
+                show() hide() toggle()
+                fadeIn() fadeOut() fadeToggle() fadeTo("slow", 0.5)
+                slideDown() slideUp() slideToggle()
+
+                콜백함수 callback
+
+                */
+                $(".box").slideToggle(1000, function(){
+                    alert("토글이 완성되었습니다.");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="box">노랑 박스</div>
+    <button>이걸 누르면 박스가 안보이게 해보자</button>
+</body>
+</html>

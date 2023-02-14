@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            background-color: rgba(138,43,226,0.5);
+            width: 300px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        .box2{
+            width: 300px;
+            height: 200px;
+            background-color: rgb(138,43,226) ;
+            opacity: 0.5;
+        }    
+        .box2:hover{
+            opacity: 1;
+        }   
+        input[type=text]{
+            width: 500px;
+            border: 2px solid aqua;
+        } 
+        a[target = blank]{
+            width : 50px
+            border: 2px solid aqua;
+        } */
+
+        /* body{
+            font-size: 16px;
+        }
+        .hero-section{
+            font-size: 2em;
+        }
+        .hero-section>p{
+            font-size: 1rem;
+        } */
+        *{box-sizing: border-box;}
+        body{
+            font-size: 32px;
+        }
+        .container{
+            max-width: 1200px;
+            border: 3px solid black;
+            margin: 50px auto;
+        }
+        .row{
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* 가운데 정렬하는 calc */
+        /* .box{ 
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: absolute;
+            left:calc(50% - 100px);
+            top: 300px;
+        } */
+        .col-3{
+            width: 25%;
+            height: 100px;
+            float: left;
+            padding-left: 15px;
+            padding-right: 15px;
+            
+        }
+        .boxin{
+            width: 100%;
+            line-height: 100px;
+            text-align: center;
+            font-size: 40px;
+            background-color: lightblue;
+        }
+        .col-12{
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            /* background-color: lightgreen; */
+        }
+        .col-12 .boxin{
+            margin-top: 30px;
+        }
+        .clear::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <h1> Text </h1>
+    </div>
+    <div class="box2">
+        <h1> Text </h1>
+    </div>
+    <input type="text">
+    <input type = "password">
+    <a href="#">링크</a>
+    <a href="#" target="_blank">링크</a> -->
+
+    <!-- <p>안녕하세요 16px</p>
+    <div class="hero-section">
+        안녕하세요. 32px
+        <p>안녕하세요 32px</p>
+    </div> -->
+
+    <div class="container clear">
+        <div class="row">
+
+        
+
+            <div class="col-3">
+                <div class="boxin">1</div>
+            </div>
+            
+
+            <div class="col-3">
+                <div class="boxin">2</div>
+            </div>
+                
+
+            <div class="col-3">
+                <div class="boxin">3</div>
+            </div>
+            
+
+            <div class="col-3">
+                <div class="boxin">4</div>
+            </div>
+        </div> 
+    
+        <div class="row">
+
+            <div class="col-12">
+                <div class="boxin">5</div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

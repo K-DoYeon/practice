@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+
+        /*
+         1. animation-name
+         2. animation-duration
+         3. animation-delay
+         4. animation-iteration-count : number or infinite(무한반복)
+         5. animation-timing-funtion
+         6. animation-fill-mode : 애니메이션이 시작되기 전이나 끝난 후 어떤 값을 적용할지
+                                  none, forwards, backwards, both
+            animate.css
+        
+        /* div{
+            position: absolute;
+            top : 0;
+            left: 0;
+            height: 300px;
+            width: 100%;
+            background-color: green;
+            /* animation-name: working;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite; 
+            animation-direction: nomal, reverse, alternate, alternate-reverse*/
+            /* animation: working 0.5s ease 0.5s; 
+        }
+        @keyframes working{
+            from {
+                opacity: 0;
+                background-color: yellow;
+                top:30px}
+            to {
+                opacity: 1;
+                background-color: green;
+                top: 0;
+            }
+            /* 20% {background-color: yellow;}
+            40% {background-color: red;}
+            60% {background-color: royalblue;}
+            80% {background-color: purple;}
+            100% {background-color: greenyellow;} 
+        } */
+
+        .container{
+            width: 200px;
+            margin: auto;
+            position: relative;
+
+        }
+        .container div{
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            margin: 30px;
+        }
+    
+        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class = "box animate__animated"></div>
+        <div class = "box animate__animated"></div>
+        <div class = "box animate__animated"></div>
+        <button onclick="ani(1)">1번 애니메이션 실행</button>
+        <button onclick="ani(2)">2번 애니메이션 실행</button>
+        <button onclick="ani(3)">3번 애니메이션 실행</button>
+    </div>
+    <script>
+        function ani(e){
+            switch(e){
+                case 1:
+                    document.getElementsByClassName('box')[0].classList.add("animate__bounce");
+                break;
+                case 2:
+                    document.getElementsByClassName('box')[1].classList.add("animate__backInDown");
+                break;
+                case 3:
+                    document.getElementsByClassName('box')[2].classList.add("animate__bounceOut");
+
+                break;
+            }
+        }
+    </script>
+
+</body>
+</html>

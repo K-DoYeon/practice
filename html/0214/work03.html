@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{box-sizing: border-box;}
+        .card>img{
+            max-width: 100%;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+        .row{
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .col-4{
+            width: 25%;
+            padding: 15px;
+        }
+        .card{
+            position: relative;
+        }
+        .text-box{
+            width: 100%;
+            height: 50%;
+            background-color: rgba(255,255,255,0.7);
+            position: absolute;
+            left: 0;
+            bottom: -50%;
+            opacity: 0;
+            z-index: 2px;
+            transition: all 0.3s;
+        }
+        .card:hover>.text-box{
+            opacity: 1;
+            bottom: 0;
+        }
+        .right{
+            text-align: right;
+        }
+        .right button{
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <script>
+        /*javascript의 내장함수
+        encodeURI() : 문자를 유니코드 값으로 인코딩(영문, 숫자, 일부 기호는 제외) <->decodeURI()
+        encodeURIComponet() : 영문 숫자 제외한 모든 것 인코딩 <-> decodeURIComponet()
+        Number() : 문자열을 숫자형 데이터로 변경
+        parselnt() : 정수형으로 변경
+        parseFloat() : 실수형 데이터로 변경
+        String() : 문자열 데이터로 반환
+        Boolean() : 논리형 데이터로 반환 ex) Boolean(5) -> true, Boolean(null) -> false
+        isNaN() : is Not a Number 숫자가 아닌 문자가 포함되어 있으면 true ex) isNaN("53") = false, isNaN("5-3") = true
+        eval() : 문자형 데이터를 따옴표가 없는 자바스크립트 코드로 처리 ex) eval("15 + 3") = 18
+        */
+        function view(e){
+
+        }
+
+    </script>
+    <div class="container">
+        <div class="right">
+
+            <button onclick="view(1)">3개씩 보기</button>
+            </div>
+
+            <button onclick="view(2)">5개씩 보기</button>
+        </div>
+        <div class="row">
+            <!--loop -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="/0214/image/23491d0c2f0313c9645868956f86257e.webp">
+                    <div class="text-box">
+                        블라블라
+                    </div>
+                </div>
+            </div>
+            <!--loop -->
+
+           <!--loop -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="/0214/image/23491d0c2f0313c9645868956f86257e.webp">
+                    <div class="text-box">
+                        블라블라
+                    </div>
+                </div>
+            </div>
+            <!--loop -->
+
+            <!--loop -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="/0214/image/23491d0c2f0313c9645868956f86257e.webp">
+                    <div class="text-box">
+                        블라블라
+                    </div>
+                </div>
+            </div>
+            <!--loop -->
+
+            <!--loop -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="/0214/image/23491d0c2f0313c9645868956f86257e.webp">
+                    <div class="text-box">
+                        블라블라
+                    </div>
+                </div>
+            </div>
+            <!--loop -->
+
+            <!--loop -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="/0214/image/23491d0c2f0313c9645868956f86257e.webp">
+                    <div class="text-box">
+                        블라블라
+                    </div>
+                </div>
+            </div>
+            <!--loop -->
+
+            <!--loop -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="/0214/image/23491d0c2f0313c9645868956f86257e.webp">
+                    <div class="text-box">
+                        블라블라
+                    </div>
+                </div>
+            </div>
+            <!--loop -->
+
+                        <!--loop -->
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="/0214/image/23491d0c2f0313c9645868956f86257e.webp">
+                                <div class="text-box">
+                                    블라블라
+                                </div>
+                            </div>
+                        </div>
+                        <!--loop -->
+
+                        <!--loop -->
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="/0214/image/23491d0c2f0313c9645868956f86257e.webp">
+                                <div class="text-box">
+                                    블라블라
+                                </div>
+                            </div>
+                        </div>
+                        <!--loop -->
+
+                                    <!--loop -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="/0214/image/23491d0c2f0313c9645868956f86257e.webp">
+                    <div class="text-box">
+                        블라블라
+                    </div>
+                </div>
+            </div>
+            <!--loop -->
+            
+        </div>
+    </div>
+    
+</body>
+</html>

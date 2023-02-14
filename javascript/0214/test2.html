@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 2. TestScore 객체 생성자에 대한 설명이다
+        2-1. 객체 생성자 함수를 만들어 두 학생(chulsu, younghee)의 객체를 생성하고 속성으로 이름, 국어점수, 영어점수를 등록
+        2-2. getTestinfo() 메소드를 만들어 실행하면 이름, 국어, 영어 정보를 출력하도록 하세요
+        2-3. getAvg() 메소드를 만들어 실행하면 평균 점수를 출력하도록 하세요 
+        hint : new TestScore("철수",80,90);, document.write(), return -->
+    <script>
+       
+        function TestScore(name, kor, eng){
+            this.userName = name;
+            this.korNum = kor;
+            this.engNum = eng;
+            this.getTestinfo = function(){
+                document.write(`이름 : ${this.userName} <br>`);
+                document.write(`국어 : ${this.korNum} <br>`);
+                document.write(`영어 : ${this.engNum} <br>`);
+            }
+            this.getAvg = function(){
+                return (this.korNum + this.engNum) / 2;
+            }
+        }
+
+        let kimgun = new TestScore("김군", 80, 70);
+        kimgun.getTestinfo();
+
+        let leegun = new TestScore("이군", 70, 40);
+        document.write( leegun.getAvg());
+
+    </script>
+    
+</body>
+</html>

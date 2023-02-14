@@ -262,12 +262,13 @@ button.btn-link{
 }
 .main2 .AD1 .seoul{
     position: absolute;
-    top: 90%;
+    top: 115%;
     margin-left: 15px;
     line-height: 12px;
     color: white;
     font-family: 'Noto Serif KR', serif;
     font-weight: 100;
+    
 }
 .main2 .AD1 .pic2{
     width: 392.6px;
@@ -276,7 +277,7 @@ button.btn-link{
 }
 .main2 .AD1 .wine{
     position: absolute;
-    top: 110%;
+    top: 145%;
     margin-left: 15px;
     line-height: 12px;
     color: white;
@@ -290,8 +291,8 @@ button.btn-link{
 }
 .main2 .AD1 .danag{
     position: absolute;
-    top: 110%;
-    margin-left: 16%;
+    top: 145%;
+    margin-left: 22%;
     line-height: 12px;
     color: white;
     font-family: 'Noto Serif KR', serif;
@@ -304,7 +305,7 @@ button.btn-link{
 }
 .main2 .AD2 .jeju{
     position: absolute;
-    top: 95%;
+    top: 110%;
     margin-left: 15px;
     line-height: 12px;
     color: white;
@@ -318,7 +319,7 @@ button.btn-link{
 }
 .main2 .AD2 .stay{
     position: absolute;
-    top: 110%;
+    top: 143%;
     margin-left: 15px;
     line-height: 12px;
     color: white;

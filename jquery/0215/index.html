@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .apc{
+            width: 240px;
+            height: 240px;
+            margin: 100px auto;
+            background: url(apc.png) no-repeat;
+            position: relative;
+        }
+        h1{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: -80px;
+            display: none;
+        }
+        .tong{
+            width: 50px;
+            height: 59px;
+            position: absolute;
+            top: 110px;
+            left: 95px;
+            display: none;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".apc").hover(function(){
+                $(".tong").slideToggle(1000,function(){
+                    $("h1").fadeToggle();
+                });
+            });
+        }); //.jquery
+    </script>
+</head>
+<body>
+    <div class="apc">
+        <h1>메롱</h1>
+        <div class="tong">
+            <img src="/jquery/0215/tongue.png" alt="메롱">
+        </div>
+    </div>
+    
+    <!-- $(선택자).animate({
+        top: '200px'
+    }, 5s, callback); -->
+    
+    
+</body>
+</html>

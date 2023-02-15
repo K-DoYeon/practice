@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: green;
+            top: 100px;
+            position: absolute;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".box").animate({
+                    left: '+=100px', //+= 대입연산
+                }, 500);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>움직여</button>
+    <div class="box"></div>
+
+</body>
+</html>

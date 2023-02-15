@@ -1,0 +1,7 @@
+img{
+    width: 400px;
+}
+body{
+    background: url(../images/002.png) no-repeat center;
+    background-attachment: fixed;
+}

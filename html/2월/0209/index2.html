@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+    body{
+        font-size: 32px;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .container{
+        max-width: 1200px;
+        border: 3px solid black;
+        margin: 50px auto;
+    }
+    .row{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .row::after{
+        content:"";
+        display: auto;
+        clear: both;
+    }
+    [class^="col-"]{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+        float: left;
+    }
+    [class^="col-"] img{
+        width: 100%;
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1 class="text-center">Spring</h1>
+    <div class="container">
+        
+     <div class="row">
+    
+        <div class = row>
+            <div class="col-3"> 
+                    <img src="/0209/images/봄.png" alt="봄">
+            </div>
+            <div class="col-3"> 
+                <img src="/0209/images/봄2.png" alt="봄2">
+            </div>
+            <div class="col-3">
+                <img src="/0209/images/봄3.png" alt="봄3">
+            </div>
+        </div>
+    
+
+        <div class="row">
+            <div class="col-4"> 
+                    <img src="/0209/images/봄4.png" alt="봄4">
+            </div>
+        
+            <div class="col-4">
+                    <img src="/0209/images/봄5.png " alt="봄5">
+            </div>
+            <div class="col-4">
+                    <img src="/0209/images/봄6.png " alt="봄6">
+            </div>
+            <div class="col-4">
+                    <img src="/0209/images/봄7.png " alt="봄7">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

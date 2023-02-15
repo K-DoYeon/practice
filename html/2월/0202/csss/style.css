@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    /* font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    font-size: 18px; 
+    1. style variant weight size/ line-height font-family
+    2. size family */
+    /* font : italic small-caps bold 13px/30px 'Noto Sans KR', sans-serif; */
+    font : 13px "Noto Sans KR", snas-serif;
+}
+.a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    line-height: 80px;
+    text-indent: 30px;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+}
+a{
+    text-decoration: none;
+}
+.b{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.c{
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+}
+.d{
+    font-family: 'Hi Melody', cursive;
+    text-align: right;
+}
+.e{
+    font-family: 'Solitreo', cursive;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+.b span{
+    /* text-decoration-line: overline underline;
+    text-decoration-color: rgb(190, 49, 233);
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px; */
+    text-decoration: overline underline red wavy 5px;
+}
+.f{
+    text-transform: capitalize;
+}

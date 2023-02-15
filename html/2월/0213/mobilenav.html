@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            position: relative;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        nav{
+            position: absolute;
+            width: 35px;
+            top: 20px;
+            right: 30px;
+        }
+        .bar1, .bar2, .bar3{
+            display: block;
+            height: 5px;
+            background: #000;
+            margin: 6px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .change .bar1{
+            transform: rotate(-45deg) translate(-5px, 10px); 
+        }
+        .change .bar2{
+            opacity: 0;
+        }
+        .change .bar3{
+            transform: rotate(45deg) translate(-5px, -10px); 
+        }
+        .navi{
+            width: 200px;
+            position: absolute;
+            top: 60px;
+            right: -200px;
+            border: 1px solid #333;
+            transition: all 0.5s ease;
+        }
+        .navi li{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .navi.active{
+            transform: translateX(-200px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="ham" onclick="myFunc(this)">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+    </nav>
+    <nav class="navi" id="navi">
+        <!-- ul.mynav>li*5>a[href=#] -->
+        <ul class="mynav">
+            <li><a href="#">our stories</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">career</a></li>
+            <li><a href="#">news</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+
+        function myFunc(e){
+            const x = document.getElementById('navi');
+            e.classList.toggle('change');
+            x.classList.toggle("active");
+        }
+
+    </script>
+
+    <!-- classList.add("클래스 이름") --클래스 추가
+        classList.remove("클래스 이름") -- 클래스 삭제
+        classList.toggle("클래스 이름")  -- 있으면 삭제 없으면 추가
+        document.getElementById("아이디").className() == 아이디라는 아이디의 클래스 이름을 가져옴-->
+
+</body>
+</html>

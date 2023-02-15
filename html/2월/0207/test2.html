@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{box-sizing: border-box;}
+        .container{
+            width: 800px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .container div{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+        }
+        .a{
+            background-color: blue;
+            top: 0;
+            left: 0;
+
+        }
+        .b{
+            background-color: greenyellow;
+            top: 150px;
+            left: 150px;
+            z-index: 1;
+        }
+        .c{
+           
+            background-color: red;
+            top: 300px;
+            left: 300px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class ="container">
+        <div class="a"> </div>
+        <div class="b"> </div>
+        <div class="c"> </div>
+    </div>
+</body>
+</html>

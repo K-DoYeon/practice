@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{box-sizing: border-box;}
+        body{
+            background-color: blueviolet;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .main>img{
+            width: 500px;
+            height: 500px;
+        }
+        .sub>img{
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin-left: 100px;
+            cursor: pointer;
+        }
+        .h1{
+            font-size: 50px;
+            display: none;
+        }
+        .h1.show{
+            display: block;
+        }
+        @media screen and (max-width :1200px){
+            body{
+                background-color: yellow;
+            }
+        }
+        @media screen and (max-width : 600px){
+            body{
+                background-color: green;
+            }
+        }
+        @media print {
+            .gallbox{
+                display: none;
+            }
+        }
+        /* 모니터(screen) 프린터(print) 리더기(speech) */
+    </style>
+    <script src="/javascript/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           /*  $('.flo2').click(function(event){
+                $('.flo1').attr("src", "/jquery/0216/image/0357ca2a4cd46c3.jpg");
+            });
+            $('.flo3').click(function(event){
+                $('.flo1').attr("src", "/jquery/0216/image/pngtree-beautiful-hand-paint-watercolor-rose-flower-png-image_3588547.png");
+            });
+            $('.flo4').click(function(event){
+                $('.flo1').attr("src", "/jquery/0216/image/pngtree-flower-watercolor-png-image_4018179.jpg");
+            }); */
+            $('.sub>img').click(function(){
+                const img = $(this).attr("src");
+                $('.main>img').attr('src',img);
+                $('.gallbox').click(function(){
+                    //$(this).remove(); //삭제
+                    $(this).empty(); //비우는 것
+                });
+            });
+            $('button').click(function(){
+                $('.h1').toggleClass('show');
+            });
+        }); //jquery addClass() removeClass() toggleClass() hasClass(class를 가지고있는지 없는지 확인하는것) 
+        //$("선택자").css("속성","속성값") 
+        //$("div").css("font-size",30[x]).css("color","blue").css("background-color","yellow");
+        /* $("div").css({
+        fontSize: "30px",
+        color: "blue",
+        backgroundColor: "yellow"
+        }) */;
+        //let s = $("div").css("display");
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="gallbox">
+            <div class = "main">
+                <img src="/jquery/0216/image/lovepik-watercolor-flower-png-image_401345060_wh1200.png" alt = "꽃1">
+            </div>    
+            
+            <!-- <div class="sub"><img src="/jquery/0216/image/0357ca2a4cd46c3.jpg" alt = "꽃2" class="flo2"></div>
+            <div class="sub"><img src="/jquery/0216/image/pngtree-beautiful-hand-paint-watercolor-rose-flower-png-image_3588547.png" alt = "꽃3" class="flo3"></div>
+            <div class="sub"><img src="/jquery/0216/image/pngtree-flower-watercolor-png-image_4018179.jpg" alt = "꽃4" class="flo4"></div> -->
+            <div class="sub">
+                <img src="/jquery/0216/image/0357ca2a4cd46c3.jpg" alt = "꽃2">
+                <img src="/jquery/0216/image/pngtree-beautiful-hand-paint-watercolor-rose-flower-png-image_3588547.png" alt = "꽃3">
+                <img src="/jquery/0216/image/pngtree-flower-watercolor-png-image_4018179.jpg" alt = "꽃4">
+            </div>
+        </div>
+        <button>보이기안보이기</button>
+        <h1 class="h1 show">텍스트 입니다.</h1>
+        
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1200px;
+            margin: auto;
+            background: #fefefe;
+            padding: 50px;
+            border: 2px solid #ddd;
+            color: lightgray;
+            margin: 15px auto;
+        }
+        .container>div{
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+    <script src="/javascript/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            //parent() -> 부모, parents()-> 조상, parentsUntill()-> 조상중 ~까지
+            $('span').parentsUntil("div").css({
+                "color" : "red",
+                "border" : "2px solid red"
+            });
+            
+        }); //jquery
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div>div
+            <ul>ul
+                <li>li
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+        <div>div2
+            <p>p
+                <span>span</span>
+            </p>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

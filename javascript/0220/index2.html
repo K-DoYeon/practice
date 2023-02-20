@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: block;
+            border: 2px solid #ccc;
+            color: #ccc;
+            padding: 8px;
+            margin: 20px;
+        }
+    </style>
+    <script src="/javascript/jquery-1.12.4.min.js"></script>
+    <script>
+        /*
+        siblings()
+        next()
+        nextAll()
+        nextUtill()
+
+        prev()
+        prevAll()
+        prevUtill()
+
+        first(), last(), eq()
+        filter(), not()
+        */
+        $(function(){
+        //children, find
+        // $('div').children().css({ "border" : "2px solid red"})
+        
+        // $('h2').nextUntil("p").css({"color":"red", "border" : "2px solid red"})
+        // $('div').eq(0).css("background-color","yellow");
+        $('div').not('.box').css("background-color","yellow");
+        }); //jquery
+    </script>
+</head>
+<body>
+    <!-- <div>
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+    </div>
+     -->
+     <div class="box">
+        박스1
+     </div>
+     <div>
+        박스2
+     </div>
+     <div>
+        박스3
+     </div>
+     <div>
+        박스4
+     </div>
+    
+</body>
+</html>
+
+<!-- 
+    parent() parents() parentsUntill 
+    children() find()
+    siblings() next() nextAll() nextUntill()
+    prev() prevAll() prevUntill()
+-->

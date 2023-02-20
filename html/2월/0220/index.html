@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .box{
+            height: 50px;
+        }
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dashed #333;
+        }
+        .tooltiptext{
+            width: 120px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            /* left: 50%; 
+            bottom: 170%; 위 */
+            /* left: 140%;
+            bottom: 10%; 오른쪽*/
+            /* left: 50%;
+            top: 150%; 아래*/
+            left: -40%;
+            transform: translate(-50%);
+            /* visibility: hidden; */
+            display: none;
+        }
+        .tooltip:hover .tooltiptext{
+            /* visibility: visible; */
+            display: inline-block;
+        }
+        .tooltiptext::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            border-width: 5px;
+            /* top: -30%; 
+            right:50%; 아래 */
+            /* top : 100%;
+            left: calc(50% - 2.5px); 위 */
+            /* top: 40%;
+            left: calc(-8%); 오른쪽 */
+            left: 100%;
+            bottom: 30%;
+            border-style: solid;
+            border-color: transparent transparent transparent #000;
+        }
+   
+
+    </style>
+</head>
+<body>
+    <!-- <a href="#" title="네이버바로가기">여기를 누르세요</a> -->
+    <div class="box"></div>
+    <div class="tooltip">
+        여기에 마우스를 올리세요. 
+        <span class="tooltiptext">
+            툴팁입니다. 
+        </span>
+    </div>
+   
+
+</body>
+</html>

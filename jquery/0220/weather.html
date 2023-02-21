@@ -24,7 +24,7 @@
                 success: function(data){
                     console.log(data);
                     $("#cityname").html(data.name);
-                    $(".citytemp").html(data.temp);
+                    $(".citytemp").html(data.main.temp);
                 },
                 error: function(xhr, status, error){
                     alert('에러!');
@@ -41,3 +41,11 @@
     
 </body>
 </html>
+
+<!-- 
+    weather > 모바일용 앱 > json openweathermap 연결 > apache cordova(모바일앱-안드로이드, ios)
+    1. cordova - html을 cordova로 만드는 작업
+    2. android 용 app으로 제작 (android studio - java), ios(스캐치)
+    3. 안드로이드앱(ios 원하시는 분들) weather.apk
+
+-->

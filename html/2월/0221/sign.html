@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Sunflower:wght@300;500;700&display=swap');
+        </style>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            font-family: 'Malgun Gothic', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 580px;
+            max-width: 90%;
+            margin: 40px auto 50px;
+            padding: 0 40px 60px;
+            border: 1px solid #eaedf3;
+            background: #fff;
+        }
+        ul, p, div, h1,h2,h3{
+            margin: 0;
+            padding: 0;
+        }
+        h1.title{
+            font-family: 'Sunflower', sans-serif;
+            font-size: 2.3em;
+            padding:  30px 0 16px;
+            border-bottom: 1px solid #eaedf3;
+            text-align: center;
+            letter-spacing: -3px;
+            word-spacing: 8px;
+        }
+        article{
+            margin-top: 30px;
+        }
+        .joinbox{
+            border: 1px solid #eaedf3;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .joinbox a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+        .p-join .joinbox-body a p{
+            color: #000;
+            text-align: center;
+            font-family: 'Sunflower', sans-serif;
+            letter-spacing: -1px;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        .p-join .joinbox-body a p::before{
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: 40px auto 5px;
+            background: url(/html/2월/0221/images/logo2.png) no-repeat 0 0;
+            background-size: 100px;
+        }
+        .joinbox-body span.small{
+            color: #959ba6;
+            font-size: 0.9em;
+            font-family: 'Malgun Gothic', sans-serif;
+            display: inline-block;
+            margin-bottom: 35px;
+        }
+        .p-join .joinbox-bottom{
+            background-color: #ffe000;
+            text-align: center;
+        }
+        .joinbox-bottom a{
+            display: block;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #000;
+            line-height: 50px;
+        }
+        ul.sns{
+            list-style: none;
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #eaedf3;
+            border-radius: 8px;
+        }
+        ul.sns li{
+            position: relative;
+            width: 25%;
+            line-height: 50px;
+            padding-left: 60px;
+        }
+        ul.sns li a{
+            text-decoration: none;
+            color: #424346;
+        }
+        ul.sns li:not(:first-child){
+            border-left: 1px solid #eaedf3;
+        }
+        ul.sns li::before{
+            position: absolute;
+            content: "";
+            display: block;
+            width: 18px;
+            height: 18px;
+            background: url(/html/2월/0221/images/logo3.png) no-repeat;
+            background-size: 158px auto;
+            top: 15px;
+            left: 30px;
+        }
+        ul.sns li.naver::before{
+            background-position: -36px -40px;
+        }
+        ul.sns li.kakao::before{
+            background-position: -55px -40px;
+        }
+        ul.sns li.facebook::before{
+            background-position: -18px -40px;
+        }
+        ul.sns li.apple::before{
+            background-position: 0px -40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">알바천국 회원가입을 환영합니다.</h1>
+
+        <!-- 개인회원 -->
+        <article class="p-join">
+            <div class="joinbox">
+                <div class="joinbox-body">
+                    <a href="#">
+                        <p>개인회원</p>
+                        <span class="small">알바, 천국에 다 있어요.</span>
+                    </a>
+                </div>
+                <div class="joinbox-bottom">
+                    <a href="#">개인회원 가입하기</a>
+                </div>
+
+            </div>
+            <ul class="sns">
+                <li class="naver"><a href="#" >네이버</a></li>
+                <li class="kakao"><a href="#">카카오</a></li>
+                <li class="facebook"><a href="#" class="facebook">페이스북</a></li>
+                <li class="apple"><a href="#">애플</a></li>
+            </ul>
+        </article>
+
+        <!-- 기업회원 -->
+        <article class="c-join">
+            <div class="joinbox">
+                <div class="joinbox-body"></div>
+                <div class="joinbox-bottom"></div>
+
+            </div>
+
+        </article>
+    </div>
+    
+</body>
+</html>

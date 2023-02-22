@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        [class^=col]>div{
+            background: #ddd;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+        img{
+            max-width: 100%;
+        }
+    </style>
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+
+    <!-- 
+    반응형 (크기별): xl(가장큰), lg, md, sm(=col-12)(모바일 사이즈)
+
+    패딩 : p-1 ~ p-5 pt-1 ~ pt-5 pb, py , px, pl, pr,
+    마진 : m-1~5 mt mb my mx ml mr
+    글자에 대한 옵션 : text (text-white, text-center...)
+    border
+    박스 : container, container-fluid
+    백그라운드 : bg
+    색상: info primary success danger warning  secondary (white, dark,muted)
+    
+    grid: col-12 col-1
+
+    colleps
+    -->
+
+    <div class="container-sm p-3 my-3 bg-dark text-white">
+        <h1>부트스트랩</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-sm">
+        <h1>IMAGE GALLERY</h1>
+        <p>부트스트랩을 이용한 이미지 갤러리 입니다.</p>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+                <img src="../html/2월/0213/image/pancake.jpg" alt="팬케이크">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+                <img src="../html/2월/0213/image/pancake.jpg" alt="팬케이크">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+                <img src="../html/2월/0213/image/pancake.jpg" alt="팬케이크">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+                <img src="../html/2월/0213/image/pancake.jpg" alt="팬케이크">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+                <img src="../html/2월/0213/image/pancake.jpg" alt="팬케이크">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+                <img src="../html/2월/0213/image/pancake.jpg" alt="팬케이크">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+                <img src="../html/2월/0213/image/pancake.jpg" alt="팬케이크">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+                <img src="../html/2월/0213/image/pancake.jpg" alt="팬케이크">
+            </div>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

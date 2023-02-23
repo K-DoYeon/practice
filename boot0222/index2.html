@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+            <div class="container">
             <a href="#" class="navbar-brand">MYWEB</a>
+
             <button class="navbar-toggler" type="button"
                 data-toggle="collapse" data-target="#navbar"
             >
@@ -35,11 +41,14 @@
                     <button class="btn btn-outline-success">search</button>
                 </form>
             </div>
+        </div>
         </nav>
     </header>
     <main>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-            <!-- Indicators -->
+        <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            
+            Indicators
+
             <ul class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -48,12 +57,33 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://picsum.photos/id/237/2000/500" alt="01">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>첫번째 이미지</h1>
+                            <p>뛰노는 용기가 있는 풍부하게 우리의 청춘 이것이다. 바이며, 얼음 기관과 이것이야말로 부패를 것은 꽃 커다란 피다. 바로 이성은 우는 이상의 못할 그들에게 말이다. </p>
+                            <p><a href="#" class="btn btn-primary btn-lg">SING UP</a></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://picsum.photos/2000/500?grayscale" alt="02">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>두번째 이미지</h1>
+                            <p>뛰노는 용기가 있는 풍부하게 우리의 청춘 이것이다. 바이며, 얼음 기관과 이것이야말로 부패를 것은 꽃 커다란 피다. 바로 이성은 우는 이상의 못할 그들에게 말이다.</p>
+                            <p><a href="#" class="btn btn-success btn-lg">SING UP</a></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://picsum.photos/seed/picsum/2000/500" alt="03">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>세번째 이미지</h1>
+                            <p>뛰노는 용기가 있는 풍부하게 우리의 청춘 이것이다. 바이며, 얼음 기관과 이것이야말로 부패를 것은 꽃 커다란 피다. 바로 이성은 우는 이상의 못할 그들에게 말이다.</p>
+                            <p><a href="#" class="btn btn-danger btn-lg">SING UP</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -66,8 +96,85 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">다음</span>
             </a>
+        </div> -->
+
+        <div class="slick-slider">
+            <div>
+                <img src="https://picsum.photos/id/237/600/500" alt="#">
+            </div>
+            <div>
+                <img src="https://picsum.photos/id/238/600/500" alt="#">
+            </div>
+            <div>
+                <img src="https://picsum.photos/id/239/600/500" alt="#">
+            </div>
+            <div>
+                <img src="https://picsum.photos/id/240/600/500" alt="#">
+            </div>
+            <div>
+                <img src="https://picsum.photos/id/241/600/500" alt="#">
+            </div>
+            <div>
+                <img src="https://picsum.photos/id/242/600/500" alt="#">
+            </div>
+            <div>
+                <img src="https://picsum.photos/id/243/600/500" alt="#">
+            </div>
+        </div>
+        <!-- arrow button -->
+        <div class="indicator">
+            <div class="prevArrow"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="nextArrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="container">
+            <h1 class="text-center my-5">FIRST NAV</h1>
+            <p class="pb-3">국교는 인정되지 아니하며, 종교와 정치는 분리된다. 여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.</p>
+                <div class="row">
+                    <div class="col-md-4 clo-12 mt-5 text-center">
+                        <img class="rounded-circle" src="https://picsum.photos/id/236/150/150" alt="#">
+                        <h2 class="my-3">제목입니다.</h2>
+                        <p class="mb-4">국교는 인정되지 아니하며, 종교와 정치는 분리된다. 여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.</p>
+                        <a class="btn btn-secondary" href="#">자세히보기</a>
+                    </div>
+                    <div class="col-md-4 clo-12 mt-5 text-center">
+                        <img class="rounded-circle" src="https://picsum.photos/id/230/150/150" alt="#">
+                        <h2 class="my-3">제목입니다.</h2>
+                        <p class="mb-4">국교는 인정되지 아니하며, 종교와 정치는 분리된다. 여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.</p>
+                        <a class="btn btn-secondary" href="#">자세히보기</a>
+                    </div>
+                    <div class="col-md-4 clo-12 mt-5 text-center">
+                        <img class="rounded-circle" src="https://picsum.photos/id/220/150/150" alt="#">
+                        <h2 class="my-3">제목입니다.</h2>
+                        <p class="mb-4">국교는 인정되지 아니하며, 종교와 정치는 분리된다. 여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.</p>
+                        <a class="btn btn-secondary" href="#">자세히보기</a>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <div class="row">
+                    <div class="col-md-7 clo-12">
+                        <h1 class="pb-3">고용·임금 및 근로조건</h1>
+                        <p>고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.
+                           고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.
+                           고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.
+                        </p>
+                        <p>고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.
+                            고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.
+                            고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다.
+                         </p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <img class="img-thumbnail" src="https://picsum.photos/id/208/800/600" alt="#">
+                    </div>
+                </div>
         </div>
     </main>
+
+    <footer class="bg-secondary text-white">
+        <div class="container text-center py-5 mt-5">
+            Copyright &copy; KDOY all right reserved.
+        </div>
+    </footer>
     
 </body>
 </html>

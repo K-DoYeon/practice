@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab{
+            border: 1px solid #ccc;
+            background-color: #ededed;
+            overflow: hidden;
+        }
+        .tab a{
+            display: block;
+            float: left;
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            line-height: 40px;
+            padding: 15px 20px;
+            transition: all 0.3s;
+        }
+        .tab a:hover{
+            background: #ddd;
+        }
+        .tabconte nt{
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-top: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <a href="javascript:void(0)" class="tablinks active" id="default" onclick="openCity(event, 'london')">런던</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'pari')">파리</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'seoul')">서울</a>
+    </div>
+    <div id="london" class="tabcontent">
+        <h1>LONDON</h1>
+        런던은 영국의 수도입니다.
+    </div>
+    <div id="pari" class="tabcontent">
+        <h1>PARI</h1>
+        파리는 프랑스의 수도입니다.
+    </div>
+    <div id="seoul" class="tabcontent">
+        <h1>SEOUL</h1>
+        서울은 대한민국의 수도입니다.
+    </div>
+    <script>
+        function openCity(e, cityName){
+            let i, tabcontant, tablinks;
+
+            tabcontant = document.getElementsByClassName("tabcontent");
+            for(i=0; i < tabcontant.length; i++){
+                tabcontant[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for(i=0; i<tablinks.length; i++){
+                tablinks[i].className = tablinks[i].className.replace("active");
+            }
+                document.getElementById(cityName).style.display="block";
+                e.currentTarget.classList.toggle("active");
+                //e.currentTarget.className += " active";
+            
+            
+        }
+        document.getElementById("default").click();
+    </script>
+</body>
+</html>

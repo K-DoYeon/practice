@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="ani_string('target')">
+    
+   <!-- <p id="yy"></p>
+
+   <button onclick="p()">버튼</button> -->
+
+   <pre id="target">javascript </pre>
+
+    <script>
+
+/*  1. 현재 날짜와 시간을 아래 형식으로 표시하세요.
+
+   오늘은 0000년 00월 00일 00요일입니다.  그리고 지금 시간은 오전 00시 00분 00초 입니다.
+
+   * hint : 날짜 함수 new Date() 이용.
+ */
+/* const weekday = ["일","월","화","수","목","금","토"]
+
+const dt = new Date();
+
+var y = dt.getFullYear();
+var m = dt.getMonth()+1;
+var d = dt.getDate();
+var i = weekday[dt.getDay()];
+
+var hour = dt.getHours();
+var prepand = (hour >= 12)?"오후":"오전";
+hour = (hour >= 12) ? hour -12: hour;
+var m = dt.getMinutes();
+var s = dt.getSeconds();
+
+ 
+document.getElementById("yy").innerHTML = `${y}년 ${m}월 ${d}일 ${i}요일입니다. 지금 시간은 ${prepand} ${hour}시 ${m}분 ${s}초 입니다.` */
+ 
+
+/* 2. 버튼을 클릭하 현재 페이지의 내용을 인쇄하는 JavaScript  코드를 작성하세요. 
+
+ * hint : 프린트 함수를 찾아 볼 것 */
+
+ 
+/* function p(){
+    window.print();
+} */
+ 
+
+/* 3. 현재 날짜를 가져오는 JavaScript 코드를 작성하세요.
+
+   2023-03-02 */
+
+/* const dtt = new Date();
+const yyyy = dtt.getFullYear();
+let mm = dtt.getMonth()+1;
+mm = (mm < 10)? '0' + mm:mm;
+let dd = dtt.getDate();
+dd = (dd < 10)? '0' + dd:dd;
+document.write(`${yyyy}-${mm}-${dd}`);
+ */
+ 
+
+/* 4. 세 변의 길이가 5, 6, 7인 삼각형의 넓이를 찾는 자바스크립트 코드를 작성하세요.
+
+  * hint1:  헤론의 공식 ==> https://miho273.tistory.com/28   6번.
+
+  * hint2: javascript 에서 루트 구하는 함수 찾아 볼 것 -> sqrt*/
+
+ /*  let side1 = 5;
+  let side2 = 6;
+  let side3 = 7;
+
+  let s = (side1 + side2 +side3)/2;
+  let rs = Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
+  document.write(rs); */
+
+
+
+ 
+
+/* 5. JavaScript 라는 문자의 끝을 하나씩 지우고 앞으로 붙이는 함수를 만든 후  setInterval을 이용하여 일정시간동안 문자열이 흐르는 듣한 모습을 만드시오.
+
+  * 문자열 함수 검색  */
+
+    function ani_string(id){
+        const el = document.getElementById(id);
+        let textNode = el.childNodes[0]; //자식 요소들
+        let text = textNode.data; //자식 요소들의 텍스트 배열
+        
+        setInterval(function(){
+        text = text[text.length -1] + text.substring(0, text.length -1);
+        textNode.data = text;
+        },1000);
+    }     
+    
+</script>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="test"></p> -->
+
+    <input type="text" id="fnum">
+    <input type="text" id="snum">
+
+    <button type="button" onclick="mul()">곱하기</button>
+    <button type="button" onclick="div()">나누기</button> <br>
+
+    <span>결과 : </span> <span id="result"></span>
+    
+
+    <script>
+        // 1. 주어진 해가 윤년인지 아닌지 판별하는 코드를 작성하시오.
+
+        /* function leapyear(year){
+            return(year % 100 === 0)?(year % 400 === 0) : (year % 4 === 0);
+        }
+        document.write(leapyear(2023));
+        document.write(leapyear(2024)); */
+
+        /* let a = prompt("연도를 입력하세요");
+        let b;
+
+        if(a % 4 == 0 && a % 100 == 0 && a % 400 == 0){
+            b = "윤년입니다.";
+        }else{
+            b = "윤년이 아닙니다.";
+        }
+        document.getElementById("test").innerHTML = b; */
+
+
+        // 2. 2023년 부터 2100년 사이에 1월1일이 일요일이 되는 해는 모두 출력 하시오.
+
+        /* for(let y = 2023; y <= 2100; y++){
+            let dt = new Date(y,0,1);
+            if(dt.getDay() === 0){
+                document.write("1월 1일이 일요일인 해는 " + y + "입니다.")
+            }
+        } */
+
+
+        
+
+        /* 3. 컴퓨터가 선택한 1부터 10까지의 수중 하나의 정수를 사용자가 알아 맞추는 간단한 게임을 만드시오.
+
+        hint : 사용자는 prompt를 이용하여 수를 입력.  입력한 내용이 숫자가 아닌 경우 10이 넘어가는 경우 에러 출력 */
+
+        /* let a = prompt("1~10까지의 숫자를 입력하세요");
+        let b = Math.ceil(Math.random()*10);
+        let c;
+
+        if(a == b){
+            c= "정답입니다";
+        }else{
+            c = "틀렸습니다";
+        }
+
+        document.getElementById("test").innerHTML = c; */
+        
+
+        // 4. 우리 수업의 수료일은 7월10일 입니다. 7월 10일까지 남은 날짜를 계산하는 코드를 작성하세요.
+
+        /* const td = new Date();
+        const grd = new Date(td.getFullYear(),6,10);
+
+        if(td.getMonth() === 6 && td.getDate() > 10){
+            document.write("이미 수료했어요");
+        }
+        const od = 24*60*60*1000;
+        const ed = Math.ceil((grd.getTime()-td.getTime())/od);
+        
+        document.write("남은 시간은 " + ed + "입니다."); */
+        
+
+        // 5. 위 사진과 같이 곱셈 또는 나눗셈을 출력하는 html과 스크립트 코드를 작성 하시오.
+
+        function mul(){
+           const num1 = document.getElementById("fnum").value;
+           const num2 = document.getElementById("snum").value;
+           document.getElementById("result").innerHTML = num1 * num2;
+        }
+        function div(){
+           const num1 = document.getElementById("fnum").value;
+           const num2 = document.getElementById("snum").value;
+           document.getElementById("result").innerHTML = num1 / num2;
+        }
+
+    </script>
+    
+</body>
+</html>

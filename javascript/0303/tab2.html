@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        
+        body,html{
+            height: 100%;
+            margin: 0;
+        }
+        nav{
+            overflow: auto;
+        }
+        a.tablink{
+            display: inline-block;
+            float: left;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            font-size: 18px;
+            width: 25%;
+            text-align: center;
+            text-decoration: none;
+            font-variant: small-caps;
+            transition: 300ms;
+        }
+        a.tablink:hover{
+            background-color: #888;
+        }
+        .tabcontent{
+            color: #fff;
+            padding: 100px 50px;
+            height: 100%;
+            display: none;
+        }
+        #about{
+            background-color: palevioletred;
+        }
+        #product{
+            background-color: palegoldenrod;
+        }
+        #community{
+            background-color: paleturquoise;
+        }
+        #contact{
+            background-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="javascript:void(0)" class="tablink" id="default" onclick="tabPage('about',this,'palevioletred')">About</a>
+        <a href="javascript:void(0)" class="tablink" onclick="tabPage('product',this,'palegoldenrod')">Product</a>
+        <a href="javascript:void(0)" class="tablink" onclick="tabPage('community',this,'paleturquoise')">Community</a>
+        <a href="javascript:void(0)" class="tablink" onclick="tabPage('contact',this,'palegreen')">Contact</a>
+    </nav>
+
+    <div class="tabcontent" id="about">
+        <h1>About</h1>
+        <p>대중을 이상 끝에 바이며, 그들에게 쓸쓸하랴? 대중을 그들에게 그들에게 인생의 우리 그들을 힘차게 없으면, 낙원을 것이다.</p>
+        <p>노래하며 우리 역사를 꽃이 뭇 새 힘있다. 청춘 곳이 가치를 피고, 얼음 새 사막이다. 같으며, 가장 끓는 튼튼하며, 싸인 품에 원질이 청춘을 교향악이다.</p> 
+        <p>인생을 얼마나 뛰노는 투명하되 평화스러운 부패뿐이다. 웅대한 할지라도 뭇 끓는 하여도 것이다. 새 몸이 불러 얼마나 이것은 풀이 뭇 있는가? 얼음이 갑 그들을 노년에게서 것이다.</p>
+    </div>
+    <div class="tabcontent" id="product">
+        <h1>Product</h1>
+        <p>대중을 이상 끝에 바이며, 그들에게 쓸쓸하랴? 대중을 그들에게 그들에게 인생의 우리 그들을 힘차게 없으면, 낙원을 것이다.</p>
+        <p>노래하며 우리 역사를 꽃이 뭇 새 힘있다. 청춘 곳이 가치를 피고, 얼음 새 사막이다. 같으며, 가장 끓는 튼튼하며, 싸인 품에 원질이 청춘을 교향악이다.</p> 
+        <p>인생을 얼마나 뛰노는 투명하되 평화스러운 부패뿐이다. 웅대한 할지라도 뭇 끓는 하여도 것이다. 새 몸이 불러 얼마나 이것은 풀이 뭇 있는가? 얼음이 갑 그들을 노년에게서 것이다.</p>
+    </div>
+    <div class="tabcontent" id="community">
+        <h1>Community</h1>
+        <p>대중을 이상 끝에 바이며, 그들에게 쓸쓸하랴? 대중을 그들에게 그들에게 인생의 우리 그들을 힘차게 없으면, 낙원을 것이다.</p>
+        <p>노래하며 우리 역사를 꽃이 뭇 새 힘있다. 청춘 곳이 가치를 피고, 얼음 새 사막이다. 같으며, 가장 끓는 튼튼하며, 싸인 품에 원질이 청춘을 교향악이다.</p> 
+        <p>인생을 얼마나 뛰노는 투명하되 평화스러운 부패뿐이다. 웅대한 할지라도 뭇 끓는 하여도 것이다. 새 몸이 불러 얼마나 이것은 풀이 뭇 있는가? 얼음이 갑 그들을 노년에게서 것이다.</p>
+    </div>
+    <div class="tabcontent" id="contact">
+        <h1>Contact</h1>
+        <p>대중을 이상 끝에 바이며, 그들에게 쓸쓸하랴? 대중을 그들에게 그들에게 인생의 우리 그들을 힘차게 없으면, 낙원을 것이다.</p>
+        <p>노래하며 우리 역사를 꽃이 뭇 새 힘있다. 청춘 곳이 가치를 피고, 얼음 새 사막이다. 같으며, 가장 끓는 튼튼하며, 싸인 품에 원질이 청춘을 교향악이다.</p> 
+        <p>인생을 얼마나 뛰노는 투명하되 평화스러운 부패뿐이다. 웅대한 할지라도 뭇 끓는 하여도 것이다. 새 몸이 불러 얼마나 이것은 풀이 뭇 있는가? 얼음이 갑 그들을 노년에게서 것이다.</p>
+    </div>
+
+    <script>
+        function tabPage(pageName, el, color){
+            let i, tabcontent, tablink;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            tablink = document.getElementsByClassName("tablink");
+            for(i=0; i<tabcontent.length; i++){
+                tabcontent[i].style.display = "none";
+            }
+            for(i=0; i<tablink.length; i++){
+                tablink[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            el.style.backgroundColor = color;
+        }
+        document.getElementById("default").click();
+    </script>
+    
+</body>
+</html>

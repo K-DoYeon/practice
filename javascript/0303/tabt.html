@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+    <style>
+        *{box-sizing: border-box;}
+        
+        body, html{
+            height: 100%;
+            margin: 0;
+        }
+        
+        nav{
+            overflow: auto;
+        }
+
+        a.tablink{
+            display: inline-block;
+            float: left;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            font-size: 18px;
+            width: 25%;
+            text-align: center;
+            text-decoration: none;
+            font-variant: small-caps;
+            transition: all 0.3s;
+        }
+
+        a.tablink:hover{
+            background-color: #888;
+        }
+
+        .tabcontent{
+            color: #fff;
+            padding: 100px 50px;
+            height: 100%;
+            display: none;
+        }
+
+        #about{background-color: red;}
+        #product{background-color: orange;}
+        #community{background-color: green;}
+        #contact{background-color: blue;}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="javascript:void(0)" id = "default" class="tablink" onclick="tabPage('about', this, 'red')">About</a>
+        <a href="javascript:void(0)" class="tablink" onclick="tabPage('product', this, 'orange')">Product</a>
+        <a href="javascript:void(0)" class="tablink" onclick="tabPage('community', this, 'green')">Community</a>
+        <a href="javascript:void(0)" class="tablink" onclick="tabPage('contact', this, 'blue')">Contact</a>
+    </nav>
+
+    <div id="about" class="tabcontent">
+        <h1>About</h1>
+        <p>어쩌구 저쩌구</p>
+    </div>
+    <div id="product" class="tabcontent">
+        <h1>Product</h1>
+        <p>어쩌구 저쩌구</p>
+    </div>
+    <div id="community" class="tabcontent">
+        <h1>Community</h1>
+        <p>어쩌구 저쩌구</p>
+    </div>
+    <div id="contact" class="tabcontent">
+        <h1>Contact</h1>
+        <p>어쩌구 저쩌구</p>
+    </div>
+    
+    <script>
+        function tabPage(pageName, el, color){
+            let i, tabcontent, tablink;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            tablink = document.getElementsByClassName("tablink");
+            for(i=0; i<tabcontent.length; i++){
+                tabcontent[i].style.display = "none";
+            }
+            for(i=0; i<tablink.length; i++){
+                tablink[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            el.style.backgroundColor = color;
+        }
+        document.getElementById("default").click();
+    </script>
+</body>
+</html>

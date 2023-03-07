@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="getUrl"></p>
+    <p id="num"></p>
+    <script>
+
+    //1. 웹사이트 URL을 가져오는 JavaScript 코드를 작성하라.
+        document.getElementById("getUrl").innerHTML = window.location.href;
+        
+        console.log(document.URL);
+
+
+    /* 2. 파일의 확장자를 가져오는 코드를 작성하라. 
+
+     예) images.jpg  ==> jpg */
+
+     //let filename = prompt('파일명을 입력하세요');
+     //document.write(filename.split('.').pop()); //pop는 마지막꺼만 뽑는것 shift는 첫번째꺼 뽑는것
+
+    //3. 주어진 숫자가 13보다 적으면 13과의 차이값을 구하고 13보다 크면 절대차이의 두 배를 반환하는 코드를 작성하라.
+
+    /* let a = prompt("숫자를 입력하시오")
+    let b;
+
+    if(a < 13){
+        b = 13 - a;
+    }else{
+        b = (a - 13)*2);
+    }
+    document.getElementById("num").innerHTML = b; */
+
+    //4. 두 정수의 합을 계산하는 프로그램을 작성하라. 단 두 값이 같으면 합의 세배를 반환하라.
+
+    /* let a = parseInt(prompt("숫자"));
+    let b = parseInt(prompt("숫자2"));
+    let c = a + b;
+    let d;
+
+    if(a == b){
+        d = c*3
+    }else{
+        d = c
+    }
+    document.getElementById("num").innerHTML = d; */
+
+    //5. 두 개의 주어진 숫자를 확인하고 숫자중 하나가 50이거나 두 수의 합이 50이면 true를 반환하라.
+
+    /* let y = parseInt(prompt("숫자"))
+    let k = parseInt(prompt("숫자2"))
+    let sum = y+k;
+    let s;
+
+    if(y == 50 && k == 50 || sum == 50){
+        s = true;
+    }
+    else{
+        s= sum;
+    }
+    document.getElementById("num").innerHTML = s;
+ */
+
+    function t50(x, y){
+        return(x==50 || y ==50 || (x + y == 50));
+    }
+    document.write(t50(50,40));
+
+    //6. 주어진 정수와 100 또는 400의 차의 절대값이 20 이내인지 확인하는 코드를 작성하라.
+    function testh(x){
+        return ((Math.abs(100-x)<=20)||(Math.abs(400-x)<=20));
+    }
+    document.write(testh(80));
+
+    //7. 주어진 두 수중 하나는 양수, 하나는 음수이면 true 를 출력하는 코드를 작성하라.
+
+    function nn(x,y){
+        if((x < 0 && y > 0) || (x > 0 && y < 0)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    document.write(nn(5,5))
+    </script>
+</body>
+</html>

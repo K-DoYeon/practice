@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/javascript/jquery-1.12.4.min.js"></script>
+    <style>
+        *{box-sizing: border-box;}
+        
+        .tab a{
+            text-decoration: none;
+            color: #000;
+            font-size: 25px;
+            margin-right: 50px;
+        }
+        #lo{
+            background-color: palevioletred;
+        }
+        #pa{
+            background-color: paleturquoise;
+        }
+        #se{
+            background-color: palegreen;
+        }
+        
+        .london{
+            width: 100%;
+            height: 600px;
+            background-color: palevioletred;
+            
+            
+        }
+        .pari{
+            width: 100%;
+            height: 600px;
+            background-color: paleturquoise;
+            
+            
+        }
+        .seoul{
+            width: 100%;
+            height: 600px;
+            background-color: palegreen;
+            display: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <a href="#" id="lo">London</a>
+        <a href="#" id="pa">Pari</a>
+        <a href="#" id="se">Seoul</a>
+    </div>
+
+    <div class="city">
+    <div class="london">런던런던</div>
+    <div class="pari">파리파리</div>
+    <div class="seoul">서울서울</div>
+    </div>
+    
+</body>
+<script>
+
+    $(function(){
+        $('#lo').click(function(){
+            $('.london').toggle();
+        })
+
+        $('#pa').click(function(){
+            $('.pari').toggle();
+        })
+
+        $('#se').click(function(){
+            $('.seoul').toggle();
+        })
+    })//jquery
+
+</script>
+</html>

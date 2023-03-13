@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        /* function myDisplayer(some){
+            document.getElementById("demo").innerHTML = some;
+        } */
+        /* function myFirst(){
+            myDisplayer("안녕하세요?");
+        }
+        function mySecond(){
+            myDisplayer("반갑습니다.");
+        }
+
+        myFirst();
+        mySecond(); */
+
+        /* function myCalculator(n1, n2, mCallback){
+            let sum = n1 + n2;
+            mCallback(sum);
+        }
+        
+        myCalculator(5, 5, myDisplayer); */
+
+
+        //1초마다 숫자에 10을 더해주는 함수
+        /* const _n10Add = function(num, callback){
+            setTimeout(function(){
+                callback(num + 10);
+
+            },1000);
+        } */
+        const _n10Add = (num) => {
+            return new Promise ((res) =>{
+                setTimeout(()=>{
+                    res(num+10);
+                },1000)
+            })
+        }
+
+        //1초마다 숫자에 20을 더해주는 함수
+        /* const _n20Add = function(num, callback){
+            setTimeout(function(){
+                callback(num + 20);
+
+            },1000);
+        } */
+        const _n20Add = (num) => {
+            return new Promise ((res) =>{
+                setTimeout(()=>{
+                    res(num+20);
+                },1000)
+            })
+        }
+
+        //1초마다 30을 더해주는 함수
+
+        /* const _n30Add = function(num, callback){
+            setTimeout(function(){
+                callback(num + 30);
+
+            },1000);
+        } */
+        const _n30Add = (num) => {
+            return new Promise ((res) =>{
+                setTimeout(()=>{
+                    res(num+30);
+                },1000)
+            })
+        }
+
+        //결과값을 콘솔에 출력
+        const numLog = (num) => 
+        new promise(()=> {
+            setTimeout(()=>console.log(num), 1000);
+        })
+
+
+        //최종연산 값을 출력하는 함수
+        /* const rs = () => {
+            _n10Add(0, (callback)=>{
+                _n20Add(callback, (callback2)=>{
+                    _n30Add(callback2, (callback3)=>{
+                        numLog(callback3);
+                    })
+                })
+            })
+        } */
+
+        const rs = () => {
+            _n10Add(0)
+                .than((res)=> _n20Add(res))
+                .than((res)=> _n30Add(res))
+                .than((res)=> numLog(res));
+        }
+
+        
+
+        //어떠한 요청이 왔을 때 그 요청에 대한 응답을 기다리지 않고 다음 코드가 바로 수행되는 처리 방식을 비동기라한다.
+        
+
+    </script>
+</body>
+</html>

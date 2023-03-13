@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamberger</title>
+    <style>
+        .hamberger{
+            position: relative;
+        }
+        .hamberger>span{
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            background: #000;
+            margin-top: 2px;
+        }
+        .hamberger>span:first-child{
+            top: 5px;
+        }
+        .hamberger>span:nth-child(2){
+            top: 10px;
+        }
+        .hamberger>span:last-child{
+            top: 15px;
+        }
+        .hamberger:hover>span:first-child{
+            transform: rotate(45deg);
+            top: 10px;
+        }
+        .hamberger:hover>span:nth-child(2){
+            display: none;
+        }
+        .hamberger:hover>span:last-child{
+            transform: rotate(-45deg);
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hamberger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>

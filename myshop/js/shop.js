@@ -57,9 +57,16 @@
         setTimeout(showSlides, 5000);
     }
 
-}());
+
+
+
+}());//jquery
 
 document.getElementsByClassName('tablinks')[0].click();
+
+ function viewQuick(){
+        document.getElementsByClassName('quick')[0].classList.toggle('action');
+    }
 
 function openBest(e, bid){
     const tabcontent = document.getElementsByClassName('besttabcontent');

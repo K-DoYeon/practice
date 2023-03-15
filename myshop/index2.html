@@ -13,9 +13,20 @@
         /* const testData = JSON.parse(JSON.stringify(TestFile));
         console.log(testData); */
 
-        fetch('./data/test.json')
-        .then((res)=> res.json())
-        .then((res)=> console.log(res.persons[0].name));
+        /* fetch('./data/shoplist.json')
+        .then((res)=> res.json())//읽어온 데이터를 json으로 변환
+        .then((res)=> console.log(res.persons[0].name)); */
+
+        
+        
+        function loadshoplist(){
+            return fetch('./data/shoplist.json')
+            .then((res)=> res.json())
+            .then((json) => json.shoplist);
+        }
+
+        
+        
     </script>
     
     

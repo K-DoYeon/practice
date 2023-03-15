@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            height: 100%;
+            margin: 0;
+        }
+        *{box-sizing: border-box;}
+        .container{
+            height: 100%;
+        }
+        .tablinks{
+           background-color: #555;
+           color: #fff;
+           float: left;
+           border: none;
+           outline: none;
+           cursor: pointer;
+           padding: 14px 16px;
+           font-size: 17px;
+           width: 25%;
+        }
+        .tablinks:hover{
+            background-color: #777;
+        }
+        .tabcontent{
+            height: 100%;
+            color: #202020;
+            padding: 100px 20px;
+            display: none;
+        }
+        #Home{
+            background-color: lightcoral;
+        }
+        #News{
+            background-color: lightblue;
+        }
+        #Contact{
+            background-color: lightgoldenrodyellow;
+        }
+        #About{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <button class="tablinks" id="dfclick" onclick="openPage('Home',this,'lightcoral')">Home</button>
+            <button class="tablinks" onclick="openPage('News',this,'lightblue')">News</button>
+            <button class="tablinks" onclick="openPage('Contact',this,'lightgoldenrodyellow')">Contact</button>
+            <button class="tablinks" onclick="openPage('About',this,'lightgreen')">About</button>
+        
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>형사피고인은 유죄의 판결이 확정될 때까지는 무죄로 추정된다.</p>
+        </div>
+        <div id="News" class="tabcontent">
+            <h3>News</h3>
+            <p>형사피고인은 유죄의 판결이 확정될 때까지는 무죄로 추정된다.</p>
+        </div>
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>형사피고인은 유죄의 판결이 확정될 때까지는 무죄로 추정된다.</p>
+        </div>
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>형사피고인은 유죄의 판결이 확정될 때까지는 무죄로 추정된다.</p>
+        </div>
+    </div>
+
+    <script>
+        function openPage(pageName,e,color){
+            const tabcontent = document.getElementsByClassName("tabcontent");
+            const tablinks = document.getElementsByClassName("tablinks");
+            
+            for(let i = 0; i < tabcontent.length; i++ ){
+                tabcontent[i].style.display = "none";
+            }
+
+            for(let i = 0; i < tablinks.length; i++){
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            document.getElementById(pageName).style.display = "block";
+            e.style.backgroundColor = color;
+        }
+
+        document.getElementById("dfclick").click();
+    </script>
+    
+</body>
+</html>

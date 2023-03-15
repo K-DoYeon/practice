@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            margin: 0;
+        }
+        .container{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .row{
+            margin-left: -15px;
+            margin-right: -15px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .col{
+            width: 20%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        .col img{
+            max-width: 100%;
+        }
+        .popup{
+            width: 560px;
+            height: 315px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+            position: fixed;
+            z-index: 10;
+            top: 50px;
+            left: calc(50% - 280px);
+        }
+        .close{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 1000;
+            font-size: 20px;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+            cursor: pointer;
+        }
+        .fade{
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- 유튜브 썸네일 경로 https://img.youtube.com/vi/아이디/(0.jpg or mqdefault.jpg or maxresdefault.jpg)-->
+            <div class="col">
+                <div class="imgbox" id="LzAgYVknNYg">
+                    <img src="https://img.youtube.com/vi/LzAgYVknNYg/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="imgbox" id="qNm_fVKd8kM">
+                    <img src="https://img.youtube.com/vi/qNm_fVKd8kM/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="imgbox" id="i0dPavWguwQ">
+                    <img src="https://img.youtube.com/vi/i0dPavWguwQ/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="imgbox" id="i85kydFqKlU">
+                    <img src="https://img.youtube.com/vi/i85kydFqKlU/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="imgbox" id="Bj3lta6zCAU">
+                    <img src="https://img.youtube.com/vi/Bj3lta6zCAU/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="imgbox" id="j6lPBqj19lw">
+                    <img src="https://img.youtube.com/vi/j6lPBqj19lw/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="imgbox" id="dAUu0zx4zno">
+                    <img src="https://img.youtube.com/vi/dAUu0zx4zno/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="imgbox" id="bMqeR_-cH7Q">
+                    <img src="https://img.youtube.com/vi/bMqeR_-cH7Q/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="imgbox" id="rFle4r5mpzo">
+                    <img src="https://img.youtube.com/vi/rFle4r5mpzo/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="imgbox" id="hvjiPLBctSY">
+                    <img src="https://img.youtube.com/vi/hvjiPLBctSY/mqdefault.jpg"/>
+                    <p>Better Mood 🍃 기분이 좋아지는 노래, 산뜻하고 행복한 노래 [play_list 재생 목록]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fade">
+        <div class="popup">
+            <div class="close">X</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.imgbox').click(function(){
+                const id = $(this).attr('id');
+                let link = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ id + '"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+                $('.fade').fadeIn(300, function(){
+                    $('.popup').html(link);
+                });
+            });
+            $('.fade').click(function(){
+                $(this).fadeOut(300);
+            });
+        });//jquery
+    </script>
+</body>
+</html>

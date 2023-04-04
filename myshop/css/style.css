@@ -968,6 +968,72 @@ ul.quick-btns i{
 .addProduct li#remove{
     width: 6%;
 }
-
+/* color */
+input[type=radio].color{
+    display: none;
+}
+label.colors{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: top;
+}
+label.colors span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+label.colors span::after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    border-radius: 50%;
+}
+label.colors.rgray span{
+    border-color: gray;
+}
+label.colors.rblack span{
+    border-color: black;
+}
+label.colors.purple span{
+    border-color: purple;
+}
+label.colors.pinks span{
+    border-color: pink;
+}
+input[type=radio]:checked~p{
+    font-weight: 800;
+}
+label.colors.rgray input[type=radio]:checked+span::after{
+    background: rgb(112, 112, 112);
+}
+label.colors.rblack input[type=radio]:checked+span::after{
+    background: black;
+}
+label.colors.purple input[type=radio]:checked+span::after{
+    background: purple;
+}
+label.colors.pinks input[type=radio]:checked+span::after{
+    background: rgb(252, 168, 182);
+}
+label.colors.rgray span::after{background: rgb(223, 219, 219);}
+label.colors.rblack span::after{background: rgb(161, 161, 161);}
+label.colors.purple span::after{background: rgb(202, 80, 202);}
+label.colors.pinks span::after{background: rgb(243, 206, 212);}
+.colors p{margin-top: 35px;}
 
 

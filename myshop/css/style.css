@@ -962,14 +962,15 @@ ul.quick-btns i{
     width: 60%;
 }
 .addProduct li#add,
-.addProduct li#totalP{
+.addProduct li.totalP{
     width: 17%;
 }
 .addProduct li#remove{
     width: 6%;
 }
-/* color */
-input[type=radio].color{
+/********* color **********/
+input[type=radio].color,
+input[type=radio].size{
     display: none;
 }
 label.colors{
@@ -979,6 +980,9 @@ label.colors{
     text-align: center;
     cursor: pointer;
     vertical-align: top;
+}
+label.colors.rgray{
+    margin-left: -30px;
 }
 label.colors span{
     display: inline-block;
@@ -1035,5 +1039,112 @@ label.colors.rblack span::after{background: rgb(161, 161, 161);}
 label.colors.purple span::after{background: rgb(202, 80, 202);}
 label.colors.pinks span::after{background: rgb(243, 206, 212);}
 .colors p{margin-top: 35px;}
-
-
+/**************** size *******************/
+label.sizes{
+    border: 1px solid #999;
+    padding: 5px 10px;
+    width: auto;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+}
+label.sizes p{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+}
+/* 상품 가격 출력 */
+.addProduct p{
+    margin-bottom: 5px;
+}
+.addProduct .title p:nth-child(2){
+    font-size: 16px;
+    font-weight: bold;
+}
+.addProduct span{
+    display: inline-block;
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    text-align: right;
+}
+.addbox{
+    border: 1px solid #ddd;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+li#add{
+    display: flex;
+    align-items: center;
+}
+.pmbox>div{
+    margin: 0;
+    padding: 0px 5px;
+    background: #e3e3e3;
+    cursor: pointer;
+}
+.pmbox>div>i{
+    line-height: 1;
+    padding: 0;
+}
+.listclose{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.listclose i{
+    font-size: 18px;
+    color: #999;
+}
+.totalP{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 800;
+    font-size: 15px;
+}
+/* total */
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.total label{
+    font-size: 14px;
+    font-weight: 900;
+}
+.total label>span{
+    font-size: 12px;
+    color: #999;
+    font-weight: 500;
+}
+.total div{
+    font-size: 20px;
+    font-weight: 900;
+}
+.total div>span{
+    font-size: 12px;
+    color: #999;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.buy{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pluscart, .like-p{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #ddd;
+}
+.pluscart{
+    border-bottom: none;
+}
